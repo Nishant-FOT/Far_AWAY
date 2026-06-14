@@ -1,0 +1,187 @@
+docker-compose.full.yml
+Dockerfile
+README.md
+requirements.txt
+QUICKSTART.md
+ARCHITECTURE.md
+SCHEMA_EXAMPLES.md
+IMPLEMENTATION_SUMMARY.md
+INTEGRATION_README.md
+disaster_compact_train.jsonl
+
+Assessment_agent/
+  backend/
+    Dockerfile
+    requirements.txt
+    .env
+    disaster_assessment.db
+    app/
+      main.py
+      __init__.py
+      schemas/
+        incident.py
+        assessment.py
+      services/
+        assessment_orchestrator.py
+        severity_engine.py
+        risk_engine.py
+        resource_engine.py
+        qdrant_service.py
+        persistence_service.py
+        llm_service.py
+        explanation_service.py
+        detection_source.py
+        upload_service.py
+    data/
+      sample_detection_events.json
+  docker-compose.yml
+  disaster_assessment_agent_readme.md
+  disaster_assessment_progress_readme.md
+
+Detection_agent/
+  Dockerfile
+  docker-compose.yml
+  requirements.txt
+  requirements-dev.txt
+  .env
+  .env.example
+  pytest.ini
+  app/
+    main.py
+    api/
+      router.py
+      routes/
+        detection.py
+        health.py
+        social.py
+        incidents.py
+        crew.py
+    services/
+      detection_pipeline.py
+      classifier.py
+      confidence.py
+      deduplicator.py
+      entity_extractor.py
+      fallback_detector.py
+      geocoder.py
+      history.py
+      llm_factory.py
+      normalizer.py
+      rule_engine.py
+      social_monitor.py
+    integrations/
+      ollama_client.py
+      nominatim_client.py
+      crewai_tools.py
+    db/
+      session.py
+      models.py
+      init_db.py
+    crew/
+      runner.py
+      tasks.py
+      tools.py
+      agents.py
+  data/
+    geocode_cache.json
+    detection_agent.db
+  tests/
+    (many test files)
+  sample_request.json
+
+Disaster/
+  Testpipeline.py
+  agents/
+    gis_agent.py
+    resource_agent.py
+    route_agent.py
+    communication_agent.py
+    feedback_agent.py
+  data/
+    resources.json
+    feedback.json
+  maps/
+    map_INC001.html
+
+Disaster_agent_api/
+  main.py
+  Dockerfile
+  requirements.txt
+  routes/
+    gis_routes.py
+    resource_routes.py
+    route_routes.py
+    communication_routes.py
+    feedback_routes.py
+
+Prediction_agent/
+  main.py
+  prediction_engine.py
+  requirements.txt
+  Dockerfile
+
+backend/
+  Dockerfile
+  requirements.txt
+  .env
+  app/
+    main.py
+    schemas/
+      assessment.py
+    services/
+      assessment_orchestrator.py
+      explanation_service.py
+      llm_service.py
+      qdrant_service.py
+    db/
+      session.py
+      base.py
+      init_db.py
+  tests/
+    test_assessment_api.py
+
+shared/
+  __init__.py
+  schemas.py
+  database_models.py
+  orchestrator.py
+  requirements.txt
+
+models/
+  gguf/
+    Qwen3-14B-Q4_K_M.gguf
+  manifests/
+    registry.ollama.ai/
+      library/
+        qwen3/
+          4b/
+  blobs/
+    (sha256 blob files)
+
+scripts/
+  download_gguf.py
+  download_model.py
+  generate_compact_dataset.py
+  generate_synthetic_japan.py
+  verify_model.py
+  collectors/
+    usgs_collector.py
+    news_collector.py
+    jma_collectors.py
+
+data/
+  raw/
+    jma_earthquake_samples.jsonl
+    news_samples.jsonl
+    seed_samples.jsonl
+    usgs_earthquake_samples.jsonl
+  synthetic/
+    synthetic_japan.jsonl
+
+tests/
+  test_incident_builder.py
+  test_normalizer.py
+  test_orchestrator.py
+  test_integration.py
+
+(full project contains many virtualenv and __pycache__ files omitted for brevity)

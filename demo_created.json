@@ -1,0 +1,396 @@
+﻿{
+    "incident_id":  "chennai_demo_001",
+    "state":  {
+                  "latitude":  13.0827,
+                  "longitude":  80.2707,
+                  "incident_id":  "chennai_demo_001",
+                  "incident_type":  "Flood",
+                  "severity":  "High",
+                  "affected_population":  2500,
+                  "priority":  "high",
+                  "risk_score":  0.85,
+                  "resource_urgency":  "high",
+                  "escalation_required":  true,
+                  "assessment_explanation":  "Synthetic assessment (demo): estimated from detection payload",
+                  "pipeline_stage":  "communication",
+                  "gis_output":  {
+                                     "affected_radius_km":  10.0,
+                                     "risk_probability":  0.85,
+                                     "priority_zone":  "CRITICAL",
+                                     "center":  {
+                                                    "latitude":  13.0827,
+                                                    "longitude":  80.2707
+                                                },
+                                     "infrastructure_vulnerability":  "Medium",
+                                     "resource_availability":  "Medium"
+                                 },
+                  "resource_output":  {
+                                          "demand":  {
+                                                         "boats":  100,
+                                                         "helicopters":  13,
+                                                         "food_kits":  2500,
+                                                         "medical_teams":  25,
+                                                         "ambulances":  25
+                                                     },
+                                          "allocations":  [
+                                                              {
+                                                                  "resource_id":  "CMC",
+                                                                  "name":  "Chennai Medical Center",
+                                                                  "type":  "hospital",
+                                                                  "distance_km":  0.0,
+                                                                  "assigned":  {
+                                                                                   "ambulances":  3,
+                                                                                   "medical_teams":  2
+                                                                               }
+                                                              },
+                                                              {
+                                                                  "resource_id":  "CHE_FIR_1",
+                                                                  "name":  "Chennai Fire Station 1",
+                                                                  "type":  "fire_station",
+                                                                  "distance_km":  1.552,
+                                                                  "assigned":  {
+
+                                                                               }
+                                                              },
+                                                              {
+                                                                  "resource_id":  "CHE_FIR_6",
+                                                                  "name":  "Chennai Fire Station 6",
+                                                                  "type":  "fire_station",
+                                                                  "distance_km":  1.553,
+                                                                  "assigned":  {
+
+                                                                               }
+                                                              },
+                                                              {
+                                                                  "resource_id":  "CHE_FIR_11",
+                                                                  "name":  "Chennai Fire Station 11",
+                                                                  "type":  "fire_station",
+                                                                  "distance_km":  1.557,
+                                                                  "assigned":  {
+
+                                                                               }
+                                                              },
+                                                              {
+                                                                  "resource_id":  "CHE_FIR_16",
+                                                                  "name":  "Chennai Fire Station 16",
+                                                                  "type":  "fire_station",
+                                                                  "distance_km":  1.566,
+                                                                  "assigned":  {
+
+                                                                               }
+                                                              },
+                                                              {
+                                                                  "resource_id":  "CHE_FIR_21",
+                                                                  "name":  "Chennai Fire Station 21",
+                                                                  "type":  "fire_station",
+                                                                  "distance_km":  1.578,
+                                                                  "assigned":  {
+
+                                                                               }
+                                                              },
+                                                              {
+                                                                  "resource_id":  "CHE_FIR_26",
+                                                                  "name":  "Chennai Fire Station 26",
+                                                                  "type":  "fire_station",
+                                                                  "distance_km":  1.594,
+                                                                  "assigned":  {
+
+                                                                               }
+                                                              },
+                                                              {
+                                                                  "resource_id":  "CHE_HOS_30",
+                                                                  "name":  "Chennai Hospital 30",
+                                                                  "type":  "hospital",
+                                                                  "distance_km":  1.918,
+                                                                  "assigned":  {
+                                                                                   "ambulances":  1,
+                                                                                   "medical_teams":  0
+                                                                               }
+                                                              },
+                                                              {
+                                                                  "resource_id":  "CHE_HOS_25",
+                                                                  "name":  "Chennai Hospital 25",
+                                                                  "type":  "hospital",
+                                                                  "distance_km":  1.965,
+                                                                  "assigned":  {
+                                                                                   "ambulances":  1,
+                                                                                   "medical_teams":  0
+                                                                               }
+                                                              },
+                                                              {
+                                                                  "resource_id":  "CHE_HOS_20",
+                                                                  "name":  "Chennai Hospital 20",
+                                                                  "type":  "hospital",
+                                                                  "distance_km":  2.013,
+                                                                  "assigned":  {
+                                                                                   "ambulances":  1,
+                                                                                   "medical_teams":  0
+                                                                               }
+                                                              }
+                                                          ],
+                                          "total_candidates":  129,
+                                          "estimated_response_time_min":  15
+                                      },
+                  "route_output":  {
+                                       "routes":  [
+                                                      {
+                                                          "resource_id":  "CMC",
+                                                          "resource_name":  "Chennai Medical Center",
+                                                          "resource_type":  "hospital",
+                                                          "distance_km":  0.0,
+                                                          "eta_min":  0,
+                                                          "path_coords":  [
+                                                                              [
+                                                                                  13.0827,
+                                                                                  80.2707
+                                                                              ],
+                                                                              [
+                                                                                  13.0827,
+                                                                                  80.2707
+                                                                              ],
+                                                                              [
+                                                                                  13.085700000000001,
+                                                                                  80.2677
+                                                                              ],
+                                                                              [
+                                                                                  13.0827,
+                                                                                  80.2707
+                                                                              ]
+                                                                          ]
+                                                      },
+                                                      {
+                                                          "resource_id":  "CHE_FIR_1",
+                                                          "resource_name":  "Chennai Fire Station 1",
+                                                          "resource_type":  "fire_station",
+                                                          "distance_km":  1.552,
+                                                          "eta_min":  1,
+                                                          "path_coords":  [
+                                                                              [
+                                                                                  13.0728,
+                                                                                  80.2808
+                                                                              ],
+                                                                              [
+                                                                                  13.0728,
+                                                                                  80.2707
+                                                                              ],
+                                                                              [
+                                                                                  13.080750000000002,
+                                                                                  80.27275
+                                                                              ],
+                                                                              [
+                                                                                  13.0827,
+                                                                                  80.2707
+                                                                              ]
+                                                                          ]
+                                                      },
+                                                      {
+                                                          "resource_id":  "CHE_FIR_6",
+                                                          "resource_name":  "Chennai Fire Station 6",
+                                                          "resource_type":  "fire_station",
+                                                          "distance_km":  1.553,
+                                                          "eta_min":  1,
+                                                          "path_coords":  [
+                                                                              [
+                                                                                  13.0733,
+                                                                                  80.2813
+                                                                              ],
+                                                                              [
+                                                                                  13.0733,
+                                                                                  80.2707
+                                                                              ],
+                                                                              [
+                                                                                  13.081,
+                                                                                  80.27300000000001
+                                                                              ],
+                                                                              [
+                                                                                  13.0827,
+                                                                                  80.2707
+                                                                              ]
+                                                                          ]
+                                                      },
+                                                      {
+                                                          "resource_id":  "CHE_FIR_11",
+                                                          "resource_name":  "Chennai Fire Station 11",
+                                                          "resource_type":  "fire_station",
+                                                          "distance_km":  1.557,
+                                                          "eta_min":  1,
+                                                          "path_coords":  [
+                                                                              [
+                                                                                  13.0738,
+                                                                                  80.2818
+                                                                              ],
+                                                                              [
+                                                                                  13.0738,
+                                                                                  80.2707
+                                                                              ],
+                                                                              [
+                                                                                  13.08125,
+                                                                                  80.27325
+                                                                              ],
+                                                                              [
+                                                                                  13.0827,
+                                                                                  80.2707
+                                                                              ]
+                                                                          ]
+                                                      },
+                                                      {
+                                                          "resource_id":  "CHE_FIR_16",
+                                                          "resource_name":  "Chennai Fire Station 16",
+                                                          "resource_type":  "fire_station",
+                                                          "distance_km":  1.566,
+                                                          "eta_min":  1,
+                                                          "path_coords":  [
+                                                                              [
+                                                                                  13.0743,
+                                                                                  80.2823
+                                                                              ],
+                                                                              [
+                                                                                  13.0743,
+                                                                                  80.2707
+                                                                              ],
+                                                                              [
+                                                                                  13.0815,
+                                                                                  80.2735
+                                                                              ],
+                                                                              [
+                                                                                  13.0827,
+                                                                                  80.2707
+                                                                              ]
+                                                                          ]
+                                                      },
+                                                      {
+                                                          "resource_id":  "CHE_FIR_21",
+                                                          "resource_name":  "Chennai Fire Station 21",
+                                                          "resource_type":  "fire_station",
+                                                          "distance_km":  1.578,
+                                                          "eta_min":  1,
+                                                          "path_coords":  [
+                                                                              [
+                                                                                  13.0748,
+                                                                                  80.2828
+                                                                              ],
+                                                                              [
+                                                                                  13.0748,
+                                                                                  80.2707
+                                                                              ],
+                                                                              [
+                                                                                  13.08175,
+                                                                                  80.27374999999999
+                                                                              ],
+                                                                              [
+                                                                                  13.0827,
+                                                                                  80.2707
+                                                                              ]
+                                                                          ]
+                                                      },
+                                                      {
+                                                          "resource_id":  "CHE_FIR_26",
+                                                          "resource_name":  "Chennai Fire Station 26",
+                                                          "resource_type":  "fire_station",
+                                                          "distance_km":  1.594,
+                                                          "eta_min":  1,
+                                                          "path_coords":  [
+                                                                              [
+                                                                                  13.0753,
+                                                                                  80.2833
+                                                                              ],
+                                                                              [
+                                                                                  13.0753,
+                                                                                  80.2707
+                                                                              ],
+                                                                              [
+                                                                                  13.082,
+                                                                                  80.274
+                                                                              ],
+                                                                              [
+                                                                                  13.0827,
+                                                                                  80.2707
+                                                                              ]
+                                                                          ]
+                                                      },
+                                                      {
+                                                          "resource_id":  "CHE_HOS_30",
+                                                          "resource_name":  "Chennai Hospital 30",
+                                                          "resource_type":  "hospital",
+                                                          "distance_km":  1.918,
+                                                          "eta_min":  1,
+                                                          "path_coords":  [
+                                                                              [
+                                                                                  13.0657,
+                                                                                  80.2737
+                                                                              ],
+                                                                              [
+                                                                                  13.0657,
+                                                                                  80.2707
+                                                                              ],
+                                                                              [
+                                                                                  13.077200000000001,
+                                                                                  80.2692
+                                                                              ],
+                                                                              [
+                                                                                  13.0827,
+                                                                                  80.2707
+                                                                              ]
+                                                                          ]
+                                                      }
+                                                  ],
+                                       "escape":  {
+                                                      "path_coords":  [
+                                                                          [
+                                                                              13.0827,
+                                                                              80.2707
+                                                                          ],
+                                                                          [
+                                                                              13.0827,
+                                                                              80.2807
+                                                                          ],
+                                                                          [
+                                                                              13.0967,
+                                                                              80.27669999999999
+                                                                          ],
+                                                                          [
+                                                                              13.1027,
+                                                                              80.2907
+                                                                          ]
+                                                                      ],
+                                                      "type":  "escape",
+                                                      "distance_km":  3.104,
+                                                      "eta_min":  4
+                                                  },
+                                       "evacuation_plan":  {
+                                                               "safe_point":  [
+                                                                                  13.1027,
+                                                                                  80.2907
+                                                                              ],
+                                                               "escape_distance_km":  3.104,
+                                                               "best_mode":  "drive",
+                                                               "best_eta_min":  4,
+                                                               "walk_eta_min":  37,
+                                                               "drive_eta_min":  4
+                                                           }
+                                   },
+                  "communication_output":  {
+                                               "alerts":  [
+                                                              {
+                                                                  "target_audience":  "Public",
+                                                                  "language":  "en",
+                                                                  "message":  "Detected Flood at 13.0827,80.2707."
+                                                              }
+                                                          ]
+                                           },
+                  "feedback_output":  {
+                                          "incident_id":  "chennai_demo_001",
+                                          "total_feedback_count":  0,
+                                          "corroborated":  false,
+                                          "average_trust_score":  0.0,
+                                          "recommended_actions":  [
+
+                                                                  ],
+                                          "statistics":  {
+
+                                                         }
+                                      },
+                  "prediction_output":  null,
+                  "learning_output":  null
+              }
+}
