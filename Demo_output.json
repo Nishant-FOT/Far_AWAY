@@ -1,0 +1,1517 @@
+
+  "incident_id": "DEMO-CHENNAI-001",
+  "stages": [
+    {
+      "stage": "detection",
+      "kind": "incident_detected",
+      "output": {
+        "incident_id": "DEMO-CHENNAI-001",
+        "incident_type": "Building Collapse",
+        "severity": "Critical",
+        "affected_population": 2500,
+        "entrapped": 1500,
+        "injured": 700,
+        "fatalities": 300,
+        "latitude": 12.812169,
+        "longitude": 80.230532,
+        "building": "TVH Ouranya Bay",
+        "floors": 30,
+        "city": "Chennai",
+        "timestamp": "2026-06-14T17:28:56.981634",
+        "description": "Multi-story building collapse in South Chennai. Critical rescue operation required."
+      },
+      "timestamp": "2026-06-14T17:28:56.981649"
+    },
+    {
+      "stage": "assessment",
+      "kind": "initial_assessment",
+      "output": {
+        "severity": "Critical",
+        "affected_population": 2500,
+        "entrapped": 1500
+      },
+      "timestamp": "2026-06-14T17:33:56.981651"
+    },
+    {
+      "stage": "gis",
+      "kind": "zones_delineated",
+      "extras": {
+        "zones": {
+          "incident_point": {
+            "type": "Point",
+            "coordinates": [
+              80.230532,
+              12.812169
+            ]
+          },
+          "critical_zone": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  80.233304,
+                  12.812169
+                ],
+                [
+                  80.23325,
+                  12.812696
+                ],
+                [
+                  80.233093,
+                  12.813203
+                ],
+                [
+                  80.232837,
+                  12.813671
+                ],
+                [
+                  80.232492,
+                  12.81408
+                ],
+                [
+                  80.232072,
+                  12.814416
+                ],
+                [
+                  80.231593,
+                  12.814666
+                ],
+                [
+                  80.231073,
+                  12.81482
+                ],
+                [
+                  80.230532,
+                  12.814872
+                ],
+                [
+                  80.229991,
+                  12.81482
+                ],
+                [
+                  80.229471,
+                  12.814666
+                ],
+                [
+                  80.228992,
+                  12.814416
+                ],
+                [
+                  80.228572,
+                  12.81408
+                ],
+                [
+                  80.228227,
+                  12.813671
+                ],
+                [
+                  80.227971,
+                  12.813203
+                ],
+                [
+                  80.227814,
+                  12.812696
+                ],
+                [
+                  80.22776,
+                  12.812169
+                ],
+                [
+                  80.227814,
+                  12.811642
+                ],
+                [
+                  80.227971,
+                  12.811135
+                ],
+                [
+                  80.228227,
+                  12.810667
+                ],
+                [
+                  80.228572,
+                  12.810258
+                ],
+                [
+                  80.228992,
+                  12.809922
+                ],
+                [
+                  80.229471,
+                  12.809672
+                ],
+                [
+                  80.229991,
+                  12.809518
+                ],
+                [
+                  80.230532,
+                  12.809466
+                ],
+                [
+                  80.231073,
+                  12.809518
+                ],
+                [
+                  80.231593,
+                  12.809672
+                ],
+                [
+                  80.232072,
+                  12.809922
+                ],
+                [
+                  80.232492,
+                  12.810258
+                ],
+                [
+                  80.232837,
+                  12.810667
+                ],
+                [
+                  80.233093,
+                  12.811135
+                ],
+                [
+                  80.23325,
+                  12.811642
+                ],
+                [
+                  80.233304,
+                  12.812169
+                ]
+              ]
+            ]
+          },
+          "operational_zone": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  80.236999,
+                  12.812169
+                ],
+                [
+                  80.236875,
+                  12.813399
+                ],
+                [
+                  80.236507,
+                  12.814582
+                ],
+                [
+                  80.235909,
+                  12.815673
+                ],
+                [
+                  80.235105,
+                  12.816628
+                ],
+                [
+                  80.234125,
+                  12.817413
+                ],
+                [
+                  80.233007,
+                  12.817995
+                ],
+                [
+                  80.231794,
+                  12.818354
+                ],
+                [
+                  80.230532,
+                  12.818475
+                ],
+                [
+                  80.22927,
+                  12.818354
+                ],
+                [
+                  80.228057,
+                  12.817995
+                ],
+                [
+                  80.226939,
+                  12.817413
+                ],
+                [
+                  80.225959,
+                  12.816628
+                ],
+                [
+                  80.225155,
+                  12.815673
+                ],
+                [
+                  80.224557,
+                  12.814582
+                ],
+                [
+                  80.224189,
+                  12.813399
+                ],
+                [
+                  80.224065,
+                  12.812169
+                ],
+                [
+                  80.224189,
+                  12.810939
+                ],
+                [
+                  80.224557,
+                  12.809756
+                ],
+                [
+                  80.225155,
+                  12.808665
+                ],
+                [
+                  80.225959,
+                  12.80771
+                ],
+                [
+                  80.226939,
+                  12.806925
+                ],
+                [
+                  80.228057,
+                  12.806343
+                ],
+                [
+                  80.22927,
+                  12.805984
+                ],
+                [
+                  80.230532,
+                  12.805863
+                ],
+                [
+                  80.231794,
+                  12.805984
+                ],
+                [
+                  80.233007,
+                  12.806343
+                ],
+                [
+                  80.234125,
+                  12.806925
+                ],
+                [
+                  80.235105,
+                  12.80771
+                ],
+                [
+                  80.235909,
+                  12.808665
+                ],
+                [
+                  80.236507,
+                  12.809756
+                ],
+                [
+                  80.236875,
+                  12.810939
+                ],
+                [
+                  80.236999,
+                  12.812169
+                ]
+              ]
+            ]
+          },
+          "safe_zone": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  80.244391,
+                  12.812169
+                ],
+                [
+                  80.244124,
+                  12.814805
+                ],
+                [
+                  80.243336,
+                  12.81734
+                ],
+                [
+                  80.242055,
+                  12.819677
+                ],
+                [
+                  80.240331,
+                  12.821724
+                ],
+                [
+                  80.238231,
+                  12.823405
+                ],
+                [
+                  80.235835,
+                  12.824654
+                ],
+                [
+                  80.233236,
+                  12.825423
+                ],
+                [
+                  80.230532,
+                  12.825683
+                ],
+                [
+                  80.227828,
+                  12.825423
+                ],
+                [
+                  80.225229,
+                  12.824654
+                ],
+                [
+                  80.222833,
+                  12.823405
+                ],
+                [
+                  80.220733,
+                  12.821724
+                ],
+                [
+                  80.219009,
+                  12.819677
+                ],
+                [
+                  80.217728,
+                  12.81734
+                ],
+                [
+                  80.21694,
+                  12.814805
+                ],
+                [
+                  80.216673,
+                  12.812169
+                ],
+                [
+                  80.21694,
+                  12.809533
+                ],
+                [
+                  80.217728,
+                  12.806998
+                ],
+                [
+                  80.219009,
+                  12.804661
+                ],
+                [
+                  80.220733,
+                  12.802614
+                ],
+                [
+                  80.222833,
+                  12.800933
+                ],
+                [
+                  80.225229,
+                  12.799684
+                ],
+                [
+                  80.227828,
+                  12.798915
+                ],
+                [
+                  80.230532,
+                  12.798655
+                ],
+                [
+                  80.233236,
+                  12.798915
+                ],
+                [
+                  80.235835,
+                  12.799684
+                ],
+                [
+                  80.238231,
+                  12.800933
+                ],
+                [
+                  80.240331,
+                  12.802614
+                ],
+                [
+                  80.242055,
+                  12.804661
+                ],
+                [
+                  80.243336,
+                  12.806998
+                ],
+                [
+                  80.244124,
+                  12.809533
+                ],
+                [
+                  80.244391,
+                  12.812169
+                ]
+              ]
+            ]
+          },
+          "metadata": {
+            "critical_radius_km": 0.3,
+            "operational_radius_km": 0.7,
+            "safe_radius_km": 1.5
+          }
+        }
+      },
+      "timestamp": "2026-06-14T17:38:56.981810"
+    },
+    {
+      "stage": "resource",
+      "kind": "resources_identified",
+      "extras": {
+        "allocation": {
+          "ambulances": 30,
+          "fire_tenders": 15,
+          "rescue_teams": 10,
+          "heavy_cranes": 5,
+          "ndrf_teams": 2,
+          "helicopters": 3,
+          "medical_camps": 5,
+          "food_supply_units": 4,
+          "water_supply_units": 3,
+          "total_personnel": 1850,
+          "status": "Deployed"
+        },
+        "locations": [
+          {
+            "id": "hosp_apollo",
+            "name": "Apollo Speciality Hospital Nungambakkam",
+            "type": "hospital",
+            "latitude": 13.05,
+            "longitude": 80.23
+          },
+          {
+            "id": "hosp_sri",
+            "name": "Sri Ramakrishna Hospital",
+            "type": "hospital",
+            "latitude": 13.02,
+            "longitude": 80.24
+          },
+          {
+            "id": "hosp_global",
+            "name": "Global Hospital & Health City",
+            "type": "hospital",
+            "latitude": 12.97,
+            "longitude": 80.25
+          },
+          {
+            "id": "fire_mylapore",
+            "name": "Chennai Fire Station Mylapore",
+            "type": "fire_station",
+            "latitude": 13.034,
+            "longitude": 80.264
+          },
+          {
+            "id": "fire_velachery",
+            "name": "Chennai Fire Station Velachery",
+            "type": "fire_station",
+            "latitude": 12.98,
+            "longitude": 80.218
+          },
+          {
+            "id": "police_mylapore",
+            "name": "Chennai Police Mylapore",
+            "type": "police",
+            "latitude": 13.035,
+            "longitude": 80.265
+          },
+          {
+            "id": "police_velachery",
+            "name": "Chennai Police Velachery",
+            "type": "police",
+            "latitude": 12.985,
+            "longitude": 80.22
+          },
+          {
+            "id": "ndrf_base",
+            "name": "NDRF Base Chennai",
+            "type": "ndrf",
+            "latitude": 13.19,
+            "longitude": 80.12
+          },
+          {
+            "id": "ambulance_wims",
+            "name": "WIMS Ambulance Base 1",
+            "type": "ambulance",
+            "latitude": 13.015,
+            "longitude": 80.245
+          },
+          {
+            "id": "ambulance_redcross",
+            "name": "Red Cross Ambulance Centre",
+            "type": "ambulance",
+            "latitude": 12.99,
+            "longitude": 80.23
+          }
+        ]
+      },
+      "timestamp": "2026-06-14T17:43:56.981838"
+    },
+    {
+      "stage": "route",
+      "kind": "routes_optimized",
+      "extras": {
+        "routes": {
+          "hospitals": [
+            {
+              "id": "hosp_apollo",
+              "name": "Apollo Speciality Hospital Nungambakkam",
+              "lat": 13.05,
+              "lng": 80.23,
+              "type": "hospital",
+              "distance_km": 25.8,
+              "eta_minutes": 45,
+              "path_coords": []
+            },
+            {
+              "id": "hosp_sri",
+              "name": "Sri Ramakrishna Hospital",
+              "lat": 13.02,
+              "lng": 80.24,
+              "type": "hospital",
+              "distance_km": 22.1,
+              "eta_minutes": 38,
+              "path_coords": []
+            },
+            {
+              "id": "hosp_global",
+              "name": "Global Hospital & Health City",
+              "lat": 12.97,
+              "lng": 80.25,
+              "type": "hospital",
+              "distance_km": 18.7,
+              "eta_minutes": 32,
+              "path_coords": []
+            }
+          ],
+          "fire_stations": [
+            {
+              "id": "fire_mylapore",
+              "name": "Chennai Fire Station Mylapore",
+              "lat": 13.034,
+              "lng": 80.264,
+              "type": "fire_station",
+              "distance_km": 26.2,
+              "eta_minutes": 44,
+              "path_coords": []
+            },
+            {
+              "id": "fire_velachery",
+              "name": "Chennai Fire Station Velachery",
+              "lat": 12.98,
+              "lng": 80.218,
+              "type": "fire_station",
+              "distance_km": 16.8,
+              "eta_minutes": 28,
+              "path_coords": []
+            }
+          ],
+          "police_stations": [
+            {
+              "id": "police_mylapore",
+              "name": "Chennai Police Mylapore",
+              "lat": 13.035,
+              "lng": 80.265,
+              "type": "police",
+              "distance_km": 26.5,
+              "eta_minutes": 44,
+              "path_coords": []
+            },
+            {
+              "id": "police_velachery",
+              "name": "Chennai Police Velachery",
+              "lat": 12.985,
+              "lng": 80.22,
+              "type": "police",
+              "distance_km": 17.1,
+              "eta_minutes": 28,
+              "path_coords": []
+            }
+          ],
+          "ndrf_bases": [
+            {
+              "id": "ndrf_base",
+              "name": "NDRF Base Chennai",
+              "lat": 13.19,
+              "lng": 80.12,
+              "type": "ndrf",
+              "distance_km": 32.4,
+              "eta_minutes": 52,
+              "path_coords": []
+            }
+          ],
+          "ambulance_bases": [
+            {
+              "id": "ambulance_wims",
+              "name": "WIMS Ambulance Base 1",
+              "lat": 13.015,
+              "lng": 80.245,
+              "type": "ambulance",
+              "distance_km": 19.3,
+              "eta_minutes": 32,
+              "path_coords": []
+            },
+            {
+              "id": "ambulance_redcross",
+              "name": "Red Cross Ambulance Centre",
+              "lat": 12.99,
+              "lng": 80.23,
+              "type": "ambulance",
+              "distance_km": 14.2,
+              "eta_minutes": 24,
+              "path_coords": []
+            }
+          ]
+        }
+      },
+      "timestamp": "2026-06-14T17:48:56.981847"
+    },
+    {
+      "stage": "prediction",
+      "kind": "impact_predicted",
+      "extras": {
+        "prediction": {
+          "rescue_duration_hours": 72,
+          "infrastructure_damage_percent": 95,
+          "rescue_success_probability": 0.88,
+          "critical_casualties": 700,
+          "recovery_time_days": 14,
+          "economic_impact_crores": 2850,
+          "structural_instability_score": 9.2,
+          "secondary_hazards": [
+            "Gas leaks in basement levels",
+            "Electrical hazards from downed lines",
+            "Unstable debris causing landslides on adjacent structures"
+          ]
+        }
+      },
+      "timestamp": "2026-06-14T17:53:56.981852"
+    },
+    {
+      "stage": "learning",
+      "kind": "lessons_retrieved",
+      "extras": {
+        "learning": {
+          "similar_incidents": [
+            {
+              "year": 2013,
+              "event": "East Coast Accident",
+              "location": "Kolkata",
+              "casualties": 1040,
+              "lessons": [
+                "Immediate heavy machinery deployment critical",
+                "Coordinate with local NGOs for rapid response",
+                "Establish safe corridors for evacuation",
+                "Deploy medical triage before evacuation"
+              ]
+            },
+            {
+              "year": 2010,
+              "event": "Hotel Collapse",
+              "location": "Mumbai",
+              "casualties": 54,
+              "lessons": [
+                "First 72 hours are critical for rescue",
+                "Require specialized structural engineers immediately",
+                "Heavy rescue equipment must be pre-positioned"
+              ]
+            }
+          ],
+          "best_practices": [
+            "Rapid situational assessment within first hour",
+            "Establish incident command post immediately",
+            "Pre-position medical teams at scene",
+            "Coordinate with state disaster management",
+            "Continuous structural safety assessment"
+          ],
+          "recommendations": [
+            "Deploy NDRF teams within 4 hours",
+            "Set up medical camps 500m from incident",
+            "Establish evacuation corridors",
+            "Monitor for aftershocks and secondary collapses",
+            "Engage structural engineers for stabilization"
+          ]
+        }
+      },
+      "timestamp": "2026-06-14T17:58:56.981858"
+    },
+    {
+      "stage": "final",
+      "kind": "incident_complete",
+      "output": {
+        "incident": {
+          "incident_id": "DEMO-CHENNAI-001",
+          "incident_type": "Building Collapse",
+          "severity": "Critical",
+          "affected_population": 2500,
+          "entrapped": 1500,
+          "injured": 700,
+          "fatalities": 300,
+          "latitude": 12.812169,
+          "longitude": 80.230532,
+          "building": "TVH Ouranya Bay",
+          "floors": 30,
+          "city": "Chennai",
+          "timestamp": "2026-06-14T17:28:56.981634",
+          "description": "Multi-story building collapse in South Chennai. Critical rescue operation required."
+        },
+        "gis": {
+          "incident_point": {
+            "type": "Point",
+            "coordinates": [
+              80.230532,
+              12.812169
+            ]
+          },
+          "critical_zone": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  80.233304,
+                  12.812169
+                ],
+                [
+                  80.23325,
+                  12.812696
+                ],
+                [
+                  80.233093,
+                  12.813203
+                ],
+                [
+                  80.232837,
+                  12.813671
+                ],
+                [
+                  80.232492,
+                  12.81408
+                ],
+                [
+                  80.232072,
+                  12.814416
+                ],
+                [
+                  80.231593,
+                  12.814666
+                ],
+                [
+                  80.231073,
+                  12.81482
+                ],
+                [
+                  80.230532,
+                  12.814872
+                ],
+                [
+                  80.229991,
+                  12.81482
+                ],
+                [
+                  80.229471,
+                  12.814666
+                ],
+                [
+                  80.228992,
+                  12.814416
+                ],
+                [
+                  80.228572,
+                  12.81408
+                ],
+                [
+                  80.228227,
+                  12.813671
+                ],
+                [
+                  80.227971,
+                  12.813203
+                ],
+                [
+                  80.227814,
+                  12.812696
+                ],
+                [
+                  80.22776,
+                  12.812169
+                ],
+                [
+                  80.227814,
+                  12.811642
+                ],
+                [
+                  80.227971,
+                  12.811135
+                ],
+                [
+                  80.228227,
+                  12.810667
+                ],
+                [
+                  80.228572,
+                  12.810258
+                ],
+                [
+                  80.228992,
+                  12.809922
+                ],
+                [
+                  80.229471,
+                  12.809672
+                ],
+                [
+                  80.229991,
+                  12.809518
+                ],
+                [
+                  80.230532,
+                  12.809466
+                ],
+                [
+                  80.231073,
+                  12.809518
+                ],
+                [
+                  80.231593,
+                  12.809672
+                ],
+                [
+                  80.232072,
+                  12.809922
+                ],
+                [
+                  80.232492,
+                  12.810258
+                ],
+                [
+                  80.232837,
+                  12.810667
+                ],
+                [
+                  80.233093,
+                  12.811135
+                ],
+                [
+                  80.23325,
+                  12.811642
+                ],
+                [
+                  80.233304,
+                  12.812169
+                ]
+              ]
+            ]
+          },
+          "operational_zone": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  80.236999,
+                  12.812169
+                ],
+                [
+                  80.236875,
+                  12.813399
+                ],
+                [
+                  80.236507,
+                  12.814582
+                ],
+                [
+                  80.235909,
+                  12.815673
+                ],
+                [
+                  80.235105,
+                  12.816628
+                ],
+                [
+                  80.234125,
+                  12.817413
+                ],
+                [
+                  80.233007,
+                  12.817995
+                ],
+                [
+                  80.231794,
+                  12.818354
+                ],
+                [
+                  80.230532,
+                  12.818475
+                ],
+                [
+                  80.22927,
+                  12.818354
+                ],
+                [
+                  80.228057,
+                  12.817995
+                ],
+                [
+                  80.226939,
+                  12.817413
+                ],
+                [
+                  80.225959,
+                  12.816628
+                ],
+                [
+                  80.225155,
+                  12.815673
+                ],
+                [
+                  80.224557,
+                  12.814582
+                ],
+                [
+                  80.224189,
+                  12.813399
+                ],
+                [
+                  80.224065,
+                  12.812169
+                ],
+                [
+                  80.224189,
+                  12.810939
+                ],
+                [
+                  80.224557,
+                  12.809756
+                ],
+                [
+                  80.225155,
+                  12.808665
+                ],
+                [
+                  80.225959,
+                  12.80771
+                ],
+                [
+                  80.226939,
+                  12.806925
+                ],
+                [
+                  80.228057,
+                  12.806343
+                ],
+                [
+                  80.22927,
+                  12.805984
+                ],
+                [
+                  80.230532,
+                  12.805863
+                ],
+                [
+                  80.231794,
+                  12.805984
+                ],
+                [
+                  80.233007,
+                  12.806343
+                ],
+                [
+                  80.234125,
+                  12.806925
+                ],
+                [
+                  80.235105,
+                  12.80771
+                ],
+                [
+                  80.235909,
+                  12.808665
+                ],
+                [
+                  80.236507,
+                  12.809756
+                ],
+                [
+                  80.236875,
+                  12.810939
+                ],
+                [
+                  80.236999,
+                  12.812169
+                ]
+              ]
+            ]
+          },
+          "safe_zone": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  80.244391,
+                  12.812169
+                ],
+                [
+                  80.244124,
+                  12.814805
+                ],
+                [
+                  80.243336,
+                  12.81734
+                ],
+                [
+                  80.242055,
+                  12.819677
+                ],
+                [
+                  80.240331,
+                  12.821724
+                ],
+                [
+                  80.238231,
+                  12.823405
+                ],
+                [
+                  80.235835,
+                  12.824654
+                ],
+                [
+                  80.233236,
+                  12.825423
+                ],
+                [
+                  80.230532,
+                  12.825683
+                ],
+                [
+                  80.227828,
+                  12.825423
+                ],
+                [
+                  80.225229,
+                  12.824654
+                ],
+                [
+                  80.222833,
+                  12.823405
+                ],
+                [
+                  80.220733,
+                  12.821724
+                ],
+                [
+                  80.219009,
+                  12.819677
+                ],
+                [
+                  80.217728,
+                  12.81734
+                ],
+                [
+                  80.21694,
+                  12.814805
+                ],
+                [
+                  80.216673,
+                  12.812169
+                ],
+                [
+                  80.21694,
+                  12.809533
+                ],
+                [
+                  80.217728,
+                  12.806998
+                ],
+                [
+                  80.219009,
+                  12.804661
+                ],
+                [
+                  80.220733,
+                  12.802614
+                ],
+                [
+                  80.222833,
+                  12.800933
+                ],
+                [
+                  80.225229,
+                  12.799684
+                ],
+                [
+                  80.227828,
+                  12.798915
+                ],
+                [
+                  80.230532,
+                  12.798655
+                ],
+                [
+                  80.233236,
+                  12.798915
+                ],
+                [
+                  80.235835,
+                  12.799684
+                ],
+                [
+                  80.238231,
+                  12.800933
+                ],
+                [
+                  80.240331,
+                  12.802614
+                ],
+                [
+                  80.242055,
+                  12.804661
+                ],
+                [
+                  80.243336,
+                  12.806998
+                ],
+                [
+                  80.244124,
+                  12.809533
+                ],
+                [
+                  80.244391,
+                  12.812169
+                ]
+              ]
+            ]
+          },
+          "metadata": {
+            "critical_radius_km": 0.3,
+            "operational_radius_km": 0.7,
+            "safe_radius_km": 1.5
+          }
+        },
+        "resources": [
+          {
+            "id": "hosp_apollo",
+            "name": "Apollo Speciality Hospital Nungambakkam",
+            "type": "hospital",
+            "latitude": 13.05,
+            "longitude": 80.23
+          },
+          {
+            "id": "hosp_sri",
+            "name": "Sri Ramakrishna Hospital",
+            "type": "hospital",
+            "latitude": 13.02,
+            "longitude": 80.24
+          },
+          {
+            "id": "hosp_global",
+            "name": "Global Hospital & Health City",
+            "type": "hospital",
+            "latitude": 12.97,
+            "longitude": 80.25
+          },
+          {
+            "id": "fire_mylapore",
+            "name": "Chennai Fire Station Mylapore",
+            "type": "fire_station",
+            "latitude": 13.034,
+            "longitude": 80.264
+          },
+          {
+            "id": "fire_velachery",
+            "name": "Chennai Fire Station Velachery",
+            "type": "fire_station",
+            "latitude": 12.98,
+            "longitude": 80.218
+          },
+          {
+            "id": "police_mylapore",
+            "name": "Chennai Police Mylapore",
+            "type": "police",
+            "latitude": 13.035,
+            "longitude": 80.265
+          },
+          {
+            "id": "police_velachery",
+            "name": "Chennai Police Velachery",
+            "type": "police",
+            "latitude": 12.985,
+            "longitude": 80.22
+          },
+          {
+            "id": "ndrf_base",
+            "name": "NDRF Base Chennai",
+            "type": "ndrf",
+            "latitude": 13.19,
+            "longitude": 80.12
+          },
+          {
+            "id": "ambulance_wims",
+            "name": "WIMS Ambulance Base 1",
+            "type": "ambulance",
+            "latitude": 13.015,
+            "longitude": 80.245
+          },
+          {
+            "id": "ambulance_redcross",
+            "name": "Red Cross Ambulance Centre",
+            "type": "ambulance",
+            "latitude": 12.99,
+            "longitude": 80.23
+          }
+        ],
+        "allocation": {
+          "ambulances": 30,
+          "fire_tenders": 15,
+          "rescue_teams": 10,
+          "heavy_cranes": 5,
+          "ndrf_teams": 2,
+          "helicopters": 3,
+          "medical_camps": 5,
+          "food_supply_units": 4,
+          "water_supply_units": 3,
+          "total_personnel": 1850,
+          "status": "Deployed"
+        },
+        "routes": {
+          "hospitals": [
+            {
+              "id": "hosp_apollo",
+              "name": "Apollo Speciality Hospital Nungambakkam",
+              "lat": 13.05,
+              "lng": 80.23,
+              "type": "hospital",
+              "distance_km": 25.8,
+              "eta_minutes": 45,
+              "path_coords": []
+            },
+            {
+              "id": "hosp_sri",
+              "name": "Sri Ramakrishna Hospital",
+              "lat": 13.02,
+              "lng": 80.24,
+              "type": "hospital",
+              "distance_km": 22.1,
+              "eta_minutes": 38,
+              "path_coords": []
+            },
+            {
+              "id": "hosp_global",
+              "name": "Global Hospital & Health City",
+              "lat": 12.97,
+              "lng": 80.25,
+              "type": "hospital",
+              "distance_km": 18.7,
+              "eta_minutes": 32,
+              "path_coords": []
+            }
+          ],
+          "fire_stations": [
+            {
+              "id": "fire_mylapore",
+              "name": "Chennai Fire Station Mylapore",
+              "lat": 13.034,
+              "lng": 80.264,
+              "type": "fire_station",
+              "distance_km": 26.2,
+              "eta_minutes": 44,
+              "path_coords": []
+            },
+            {
+              "id": "fire_velachery",
+              "name": "Chennai Fire Station Velachery",
+              "lat": 12.98,
+              "lng": 80.218,
+              "type": "fire_station",
+              "distance_km": 16.8,
+              "eta_minutes": 28,
+              "path_coords": []
+            }
+          ],
+          "police_stations": [
+            {
+              "id": "police_mylapore",
+              "name": "Chennai Police Mylapore",
+              "lat": 13.035,
+              "lng": 80.265,
+              "type": "police",
+              "distance_km": 26.5,
+              "eta_minutes": 44,
+              "path_coords": []
+            },
+            {
+              "id": "police_velachery",
+              "name": "Chennai Police Velachery",
+              "lat": 12.985,
+              "lng": 80.22,
+              "type": "police",
+              "distance_km": 17.1,
+              "eta_minutes": 28,
+              "path_coords": []
+            }
+          ],
+          "ndrf_bases": [
+            {
+              "id": "ndrf_base",
+              "name": "NDRF Base Chennai",
+              "lat": 13.19,
+              "lng": 80.12,
+              "type": "ndrf",
+              "distance_km": 32.4,
+              "eta_minutes": 52,
+              "path_coords": []
+            }
+          ],
+          "ambulance_bases": [
+            {
+              "id": "ambulance_wims",
+              "name": "WIMS Ambulance Base 1",
+              "lat": 13.015,
+              "lng": 80.245,
+              "type": "ambulance",
+              "distance_km": 19.3,
+              "eta_minutes": 32,
+              "path_coords": []
+            },
+            {
+              "id": "ambulance_redcross",
+              "name": "Red Cross Ambulance Centre",
+              "lat": 12.99,
+              "lng": 80.23,
+              "type": "ambulance",
+              "distance_km": 14.2,
+              "eta_minutes": 24,
+              "path_coords": []
+            }
+          ]
+        },
+        "prediction": {
+          "rescue_duration_hours": 72,
+          "infrastructure_damage_percent": 95,
+          "rescue_success_probability": 0.88,
+          "critical_casualties": 700,
+          "recovery_time_days": 14,
+          "economic_impact_crores": 2850,
+          "structural_instability_score": 9.2,
+          "secondary_hazards": [
+            "Gas leaks in basement levels",
+            "Electrical hazards from downed lines",
+            "Unstable debris causing landslides on adjacent structures"
+          ]
+        },
+        "learning": {
+          "similar_incidents": [
+            {
+              "year": 2013,
+              "event": "East Coast Accident",
+              "location": "Kolkata",
+              "casualties": 1040,
+              "lessons": [
+                "Immediate heavy machinery deployment critical",
+                "Coordinate with local NGOs for rapid response",
+                "Establish safe corridors for evacuation",
+                "Deploy medical triage before evacuation"
+              ]
+            },
+            {
+              "year": 2010,
+              "event": "Hotel Collapse",
+              "location": "Mumbai",
+              "casualties": 54,
+              "lessons": [
+                "First 72 hours are critical for rescue",
+                "Require specialized structural engineers immediately",
+                "Heavy rescue equipment must be pre-positioned"
+              ]
+            }
+          ],
+          "best_practices": [
+            "Rapid situational assessment within first hour",
+            "Establish incident command post immediately",
+            "Pre-position medical teams at scene",
+            "Coordinate with state disaster management",
+            "Continuous structural safety assessment"
+          ],
+          "recommendations": [
+            "Deploy NDRF teams within 4 hours",
+            "Set up medical camps 500m from incident",
+            "Establish evacuation corridors",
+            "Monitor for aftershocks and secondary collapses",
+            "Engage structural engineers for stabilization"
+          ]
+        },
+        "timeline": [
+          {
+            "stage": 1,
+            "timestamp": "2026-06-14T17:28:56.981977",
+            "event": "Building Collapse Detected",
+            "status": "completed"
+          },
+          {
+            "stage": 2,
+            "timestamp": "2026-06-14T17:33:56.981977",
+            "event": "Initial Assessment",
+            "status": "completed"
+          },
+          {
+            "stage": 3,
+            "timestamp": "2026-06-14T17:43:56.981977",
+            "event": "Resource Allocation",
+            "status": "completed"
+          },
+          {
+            "stage": 4,
+            "timestamp": "2026-06-14T17:58:56.981977",
+            "event": "First Responders Dispatch",
+            "status": "in-progress"
+          },
+          {
+            "stage": 5,
+            "timestamp": "2026-06-14T18:58:56.981977",
+            "event": "Rescue Teams Arrival",
+            "status": "in-progress"
+          },
+          {
+            "stage": 6,
+            "timestamp": "2026-06-14T21:28:56.981977",
+            "event": "Medical Evacuation Begins",
+            "status": "pending"
+          },
+          {
+            "stage": 7,
+            "timestamp": "2026-06-15T17:28:56.981977",
+            "event": "Structural Stabilization",
+            "status": "pending"
+          },
+          {
+            "stage": 8,
+            "timestamp": "2026-06-17T17:28:56.981977",
+            "event": "Search & Rescue Complete",
+            "status": "pending"
+          },
+          {
+            "stage": 9,
+            "timestamp": "2026-06-28T17:28:56.981977",
+            "event": "Recovery Phase",
+            "status": "pending"
+          }
+        ]
+      },
+      "timestamp": "2026-06-14T17:28:56.981995"
+    }
+  ],
+  "completed_at": "2026-06-14T17:28:56.981996"
+}
