@@ -1,0 +1,12 @@
+[
+  {
+    "incident_id": "INC-1001",
+    "incident_type": "Flood",
+    "location": "Sector 29 Gurgaon",
+    "affected_population": 5000,
+    "confidence": 0.92,
+    "water_level": 3.5,
+    "source_count": 12,
+    "timestamp": "2026-06-12T00:30:00Z"
+  }
+]

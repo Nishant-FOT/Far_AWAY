@@ -1,0 +1,172 @@
+services:
+  detection_agent:
+    build:
+      context: ./Detection_agent
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - DATABASE_URL=sqlite+aiosqlite:///./data/detection_agent.db
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - OLLAMA_MODEL=qwen3:4b
+    depends_on:
+      - ollama
+    volumes:
+      - ./Detection_agent/data:/app/data
+      - ./models:/app/models
+    networks:
+      - disaster_net
+
+  assessment_agent:
+    build:
+      context: ./Assessment_agent/backend
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8000"
+    environment:
+      - ENVIRONMENT=production
+      - DATABASE_URL=sqlite:///./data/assessment_agent.db
+      - OLLAMA_BASE_URL=http://ollama:11434
+    depends_on:
+      - ollama
+    volumes:
+      - ./Assessment_agent/backend/data:/app/data
+      - ./models:/app/models
+    networks:
+      - disaster_net
+
+  disaster_agents:
+    build:
+      context: .
+      dockerfile: Disaster_agent_api/Dockerfile
+    ports:
+      - "8002:8000"
+    environment:
+      - ENVIRONMENT=production
+      - OSRM_HOST=osrm:5000
+    volumes:
+      - ./Disaster:/app/Disaster
+      - ./Disaster/data:/app/data
+    networks:
+      - disaster_net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  osrm:
+    image: osrm/osrm-backend:latest
+    # This service requires precomputed .osrm files (or an OSM PBF to extract).
+    # By default it expects /data/region.osrm to exist; mount your .osrm dataset
+    # or add an init container to download and extract a PBF. Example usage:
+    #   docker cp your-region.osrm <compose-project>_osrm_1:/data/region.osrm
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./osrm-data:/data
+    command: ["/bin/sh","-c","if [ -f /data/region.osrm ]; then osrm-routed --algorithm mld /data/region.osrm; else echo 'No /data/region.osrm found; mount data into ./osrm-data or precompute .osrm files'; sleep infinity; fi"]
+    networks:
+      - disaster_net
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:5000/health || exit 1"]
+      interval: 20s
+      timeout: 5s
+      retries: 3
+
+  prediction_agent:
+    build:
+      context: .
+      dockerfile: Prediction_agent/Dockerfile
+    ports:
+      - "8003:8000"
+    environment:
+      - ENVIRONMENT=production
+    networks:
+      - disaster_net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  learning_agent:
+    build:
+      context: ./Learning_agent
+      dockerfile: Dockerfile
+    ports:
+      - "8004:8000"
+    environment:
+      - ENVIRONMENT=production
+      - DATABASE_URL=sqlite:///./data/learning_agent.db
+    networks:
+      - disaster_net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3000"
+    environment:
+      - NODE_ENV=production
+    networks:
+      - disaster_net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/" ]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  command_center:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8100:8000"
+    environment:
+      - ENVIRONMENT=production
+      - DETECTION_HOST=detection_agent:8000
+      - ASSESSMENT_HOST=assessment_agent:8000
+      - DISASTER_HOST=disaster_agents:8000
+      - PREDICTION_HOST=prediction_agent:8000
+      - LEARNING_HOST=learning_agent:8000
+    networks:
+      - disaster_net
+    depends_on:
+      - detection_agent
+      - assessment_agent
+      - disaster_agents
+      - prediction_agent
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/" ]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ./models:/root/.ollama/models
+    environment:
+      - OLLAMA_HOST=0.0.0.0:11434
+    networks:
+      - disaster_net
+    # Request GPU access for Ollama containers (requires NVIDIA Container Toolkit / Docker Desktop GPU support)
+    # Use `gpus: all` with modern Docker Compose, or run the container with `--gpus all`.
+    gpus: all
+
+networks:
+  disaster_net:
+    driver: bridge
+
+volumes:
+  ollama_data:

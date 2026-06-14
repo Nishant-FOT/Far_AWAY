@@ -1,0 +1,20 @@
+[
+  {
+    "incident_id": "delhi_flood_001",
+    "incident_type": "Flood",
+    "location": "New Delhi",
+    "latitude": 28.6139,
+    "longitude": 77.2090,
+    "severity": "High",
+    "affected_population": 1200
+  },
+  {
+    "incident_id": "chennai_flood_001",
+    "incident_type": "Flood",
+    "location": "Chennai",
+    "latitude": 13.0827,
+    "longitude": 80.2707,
+    "severity": "High",
+    "affected_population": 2500
+  }
+]
