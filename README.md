@@ -2,6 +2,8 @@
 
 A fully integrated, production-ready disaster management and emergency response platform with intelligent incident detection, assessment, spatial analysis, resource allocation, route optimization, and predictive analytics.
 
+WE WERE UNABLE TO UPLOAD THE COMPLETE PROJECT ON GITHUB , SO HERE IS THE COMPLETE PROJECT LINK - https://drive.google.com/file/d/1mbr3kHPyFdByAtMhMtdGjEcvcEcU1kvu/view?usp=sharing
+
 ## 📋 Table of Contents
 
 1. [Project Overview](#project-overview)
